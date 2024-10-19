@@ -75,23 +75,23 @@ WSGI_APPLICATION = 'sitewsgi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 # DATABASES = {
-#         'default': {
-#             'ENGINE': 'djongo',
-#             'NAME': 'vercel_idriver_education_db',
-#             'ENFORCE_SCHEMA': False,
-#             'CLIENT': {
-#                 'host': 'mongodb+srv://lalchanbadsa12345:CaTx1DZMsMqrovtY@cluster0.z9qtx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-#             }  
-#         }
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
 # }
+
+DATABASES = {
+        'default': {
+            'ENGINE': 'djongo',
+            'NAME': 'vercel_idriver_education_db',
+            'ENFORCE_SCHEMA': False,
+            'CLIENT': {
+                'host': 'mongodb+srv://lalchanbadsa12345:CaTx1DZMsMqrovtY@cluster0.z9qtx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+            }  
+        }
+}
 
 
 # Password validation
@@ -128,7 +128,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
